@@ -8,7 +8,7 @@
 
 2. Run `chmod a+x webp.py`.
 
-3. Create a soft link to the script using `sudo ln -s webp.py /usr/bin/webp`.
+3. Create a soft link to the script using `sudo ln -s /path/to/downloads/webp.py /usr/bin/webp`.
 
 4. Install the appropriate [libwebp precompiled utilities](https://developers.google.com/speed/webp/docs/precompiled) from Google.
 
