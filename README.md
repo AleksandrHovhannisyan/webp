@@ -1,6 +1,6 @@
 # webp
 
-> A CLI tool that converts all valid images and GIFs in a directory to a WebP equivalent.
+> A CLI tool that converts all valid images and GIFs in a directory (and all nested subdirectories) to WebP.
 
 ## Getting Started
 
@@ -14,7 +14,7 @@
 
 ## Usage and Syntax
 
-The tool converts all valid images in a directory to webp and generates the output files for those images. Static images are converted using the `cwebp` CLI utility. Animated GIFs are converted using the `gif2webp` utility that comes with the download.
+The tool converts all valid images in a directory, and all nested subdirectories, to WebP and generates the output files for those images. Static images are converted using the `cwebp` CLI utility. Animated GIFs are converted using the `gif2webp` utility that comes with the download.
 
 Syntax:
 
@@ -27,6 +27,8 @@ Example usage:
 ```bash
 webp -q 80 ~/img/
 ```
+
+This would convert all images under the `~/img/` directory, as well as all images in any nested subdirectories, to WebP.
 
 **Note**: If you're using WSL on Windows, copy the directory from File Explorer and feed it to the built-in `wslpath` utility:
 
